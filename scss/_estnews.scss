@@ -8,10 +8,28 @@
 }
 .news__flex--videos{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 5px;
     background-color: map-get($colores, color3);
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media only screen and (min-width: 1145px) {
+    .h1-style__news {
+        background-color:map-get($colores, color2);
+        text-align: center;
+        color:map-get($colores, color1);
+        padding-top: 50px;
+    }
+    .news__flex--videos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 5px;
+        background-color: map-get($colores, color3);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+

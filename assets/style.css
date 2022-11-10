@@ -24,22 +24,17 @@ ul {
         background-color: #a9cfd6; }
 
 /* Estilos del footer */
+/* footer */
 footer {
   margin: 0;
   background-color: #302e2e;
-  display: flex;
-  flex-direction: row; }
-  footer div {
-    display: flex;
-    flex-direction: row;
-    gap: 7px;
-    width: 500px; }
+  width: 100%; }
 
 .footer__logo {
   margin: 0;
-  width: 500px; }
+  width: 30%;
+  display: inline; }
 
-/* npm run build-css */
 /* Estilos index */
 video {
   position: fixed;
@@ -315,12 +310,27 @@ div img {
 
 .news__flex--videos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-items: center;
   gap: 5px;
   background-color: black;
   padding-top: 50px;
   padding-bottom: 50px; }
+
+@media only screen and (min-width: 1145px) {
+  .h1-style__news {
+    background-color: #00b4d8;
+    text-align: center;
+    color: white;
+    padding-top: 50px; }
+  .news__flex--videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 5px;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px; } }
 
 * {
   margin: 0;
