@@ -1,0 +1,26 @@
+/* Estilos del Navbar */ /* aplicando nesting */
+@import 'variables';
+.nav__position {
+    position: fixed;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:map-get($colores, color2);
+    li {
+        float: left;
+        a {
+            display: block;
+            color: map-get($colores, color1);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover {  /* se aplica & */
+                background-color:map-get($colores, hover-color_nav);
+            }
+        }
+    }
+}

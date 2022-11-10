@@ -1,0 +1,52 @@
+@import 'variables';
+
+/* Style pagina de galery */
+.h1__style--commingzoom {
+    background-color: map-get($colores, color3);
+    color: map-get($colores, color1);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.padding-top {
+    padding-top: 40px;
+}
+
+.grid__galery {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: map-get($colores, color3);
+    gap: 30px;
+    padding: 50px;
+}
+
+div img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 750px) {
+    .grid__galery {
+        display: grid;
+        grid-template-areas:
+            'pic2 pic2 pic1 pic1'
+            'pic2 pic2 pic3 pic3'
+            'pic2 pic2 pic3 pic3'
+            'pic4 pic4 pic3 pic3'
+            'pic6 pic6 pic5 pic5'
+            'pic6 pic6 pic5 pic5'
+            'pic6 pic6 pic5 pic5';
+        background-color: map-get($colores, color3);
+        gap: 10px;
+        /* En la parte de los template-areas una vez que corro el comando npm run, en mi style de assets lo indenta diferente y no queda el diseño 
+        que realmente quiero, realice muchos intentos para cabiarlo pero no funciono */
+    }
+
+    @for $i from 1 through 6 {
+        .pic#{$i} {
+            grid-area: pic($i);
+        }
+    }
+}
+
+/* Final de pagina galery */

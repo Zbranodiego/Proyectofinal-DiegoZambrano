@@ -1,0 +1,25 @@
+{
+  "name": "entrega3diegozambrano",
+  "version": "1.0.0",
+  "description": "Avances del proyecto aplicando sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/prueba.scss assets/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zbranodiego/Entrega3DiegoZambrano.git"
+  },
+  "author": "Diego Zambrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zbranodiego/Entrega3DiegoZambrano/issues"
+  },
+  "homepage": "https://github.com/Zbranodiego/Entrega3DiegoZambrano#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

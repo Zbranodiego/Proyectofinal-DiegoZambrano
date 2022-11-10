@@ -1,0 +1,67 @@
+@import 'variables';
+
+/* Style pagina de contacto */
+.grid__container-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background-color:map-get($colores,color2);
+}
+
+form label {
+    color:map-get($colores,color1);
+    font-size: 15px;
+
+}
+
+.h1-style__joinus {
+    background-color:map-get($colores,color2);
+    text-align: center;
+    color:map-get($colores,color1);
+    padding-top: 50px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid map-get($colores,color2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+select {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid map-get($colores,color2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid map-get($colores,color2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color:map-get($colores,color1);
+    background-color:map-get($colores,color3);
+}
+
+input[type=submit]:hover {
+    background-color:map-get($colores,hover-color_send);
+}
+
+/* final de pagina de contacto */

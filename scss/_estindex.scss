@@ -1,0 +1,118 @@
+/* Estilos index */
+
+video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    /* referencia de youtube para un background video */
+}
+
+/* Armado de logo */
+#logo {
+    width: 60%;
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-bottom: 200px;
+}
+/* fin logo */
+
+/* primer sector de la pagina */
+.section__1 {
+    display: flex;
+    flex-direction: column;
+    background-color:map-get($colores,color1);
+    text-align: justify;
+    width: 100%;
+}
+
+.h__position {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:map-get($colores,color1);
+}
+
+.text__position {
+    padding: 10px 20px 10px 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.image__position {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Segundo sector de la pagina */
+.section__flex2 {
+    display: flex;
+    flex-direction: column;
+    background-color:map-get($colores,color3);
+    text-align: justify;
+    width: 100%;
+}
+
+.image__position2 {
+    width: 100%;
+}
+
+.h__position2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:map-get($colores,color3);
+    color:map-get($colores,color1);
+    padding-bottom: 80px;
+}
+
+/* fin segundo sector */
+
+
+/* Responsive Index */
+@media only screen and (min-width: 1040px) {
+    .section__1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text__position {
+        font-size: 21px;
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: justify;
+        justify-content: center;
+        line-height: 1.4;
+
+    }
+
+    .image__position {
+        width: 500px;
+        padding-right: 45px;
+        padding-bottom: 15px;
+    }
+
+    .section__flex2 {
+        display: flex;
+        flex-direction: column;
+        background-color:map-get($colores,color3);
+        text-align: justify;
+        width: 100%;
+    }
+
+    .image__position2 {
+        width: 100%;
+    }
+
+    .h__position2 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color:map-get($colores,color3);
+        color:map-get($colores,color1);
+        padding-bottom: 80px;
+    }
+}

@@ -1,0 +1,20 @@
+/* Estilos del footer */
+@import 'variables';
+footer {
+    margin: 0;
+    background-color:map-get($colores,footer-color);
+    display: flex;
+    flex-direction: row;
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+        width: 500px;
+    }
+}
+.footer__logo {
+    margin: 0;
+    width: 500px;
+}
+
+/* npm run build-css */

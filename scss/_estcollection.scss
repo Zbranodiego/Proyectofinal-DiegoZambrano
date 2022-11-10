@@ -1,0 +1,76 @@
+/* Style pagina collection */
+@import 'variables';
+@import 'mixins';
+
+.grid__collection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include grid__collection-position;
+}
+
+.grid__collection {
+    div {
+        h2 {
+            @include grid__collection--h2;
+        }
+    }  
+}
+
+.h1-style__collection {
+    @include h1-style__collection;
+    @extend .extend__h1-collection;
+}
+.extend__h1-collection {
+    padding-top: 100px;
+}
+
+/* RESPONSIVE PAGE COLLECTION */
+@media only screen and (min-width: 600px) {
+    .grid__collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @include grid__collection-position;
+    }
+
+    .grid__collection {
+        div {
+            h2 {
+                @include grid__collection--h2;
+            }
+        }  
+    }
+
+    .h1-style__collection {
+        @include h1-style__collection;
+    }
+
+    .grid__collection div img:hover {
+        @include grid__collection-hover;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .grid__collection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include grid__collection-position;
+    }
+
+    .grid__collection {
+        div {
+            h2 {
+                @include grid__collection--h2;
+            }
+        }  
+    }
+
+    .h1-style__collection {
+        @include h1-style__collection;
+    }
+
+    .grid__collection div img:hover {
+        @include grid__collection-hover;
+        /* falta perfeccionar */
+    }
+}
+/* FIN DE STYLE PAGINA COLLECTION */
